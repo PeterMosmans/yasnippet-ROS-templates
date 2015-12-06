@@ -1,0 +1,29 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: finding for ROS templates
+# key: finding
+# binding: direct-keybinding
+# --
+<finding id="`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`" threatLevel="${1:$$(yas-choose-value '("Low" "Moderate" "Elevated" "High" "Extreme"))}" type="${2:Information Leak}">
+  <!-- Note: threatLevel can be Low, Moderate, Elevated, High or Extreme; type is free text -->
+
+  <title>
+  $3
+  </title>
+
+  <description>
+  $4
+  </description>
+
+  <technicaldescription>
+  $0
+  </technicaldescription>
+
+  <impact>
+  Impact on the system. What are the consequences if someone were to exploit this issue?
+  </impact>
+
+  <recommendation>
+  Recommendation for the client: what steps need to be taken to resolve the issue?
+  </recommendation>
+
+</finding>

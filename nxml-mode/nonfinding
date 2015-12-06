@@ -1,0 +1,33 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: non-finding for ROS templates
+# key: nonfinding
+# binding: direct-keybinding
+# --
+<non-finding id="`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`">
+
+  <!-- The part below is free-form, but the comments inbetween aim to provide some structuring. Any information is optional, but try to give as much (useful) information as possible. -->
+  <!-- Please do not just answer the questions but write full sentences. The stuff you write here is going to end up in the report, the comments are not! -->
+
+  <!-- Feel free to use HTML markup if you want (p, ol/ul/li, table with tr and td, img, nothing else) -->
+
+  <!-- Describe the non-finding in one sentence, if possible. -->
+
+  <title>
+    $1
+  </title>
+
+  <!-- What did you try -->
+  <p>
+    $2
+  </p>
+
+  <!-- Why did you try it -->
+  <p>
+  $3
+  </p>
+
+   <!-- Why didn't it work -->
+   <p>
+   $4
+  </p>
+</non-finding>
